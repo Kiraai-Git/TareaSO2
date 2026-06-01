@@ -83,3 +83,7 @@ Presionar **Ctrl+C** envía `SIGINT`. El sistema:
 | `sem_tableros` | Semáforo inicializado en `K_BOARDS`; garantiza que nunca haya más de K partidas simultáneas sin busy-wait. |
 | `cond_match_done` | Por jugador: cada jugador duerme aquí hasta que `board_routine` le señala el fin de su partida. |
 | `board_mutex` | Por tablero: protege `grid` y `move_history` frente a lecturas concurrentes del monitor. |
+
+## Advertencia sobre el uso de Herramientas de IA
+
+Se hace constancia que el uso de IA en este codigo fue solo y **únicamente** para el diseño visual de la representación del tablero de Tic-Tac-Toe.
